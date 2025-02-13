@@ -1,24 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyAdventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AFe-OH-cig">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="OLr-B0-AcP">
+                                <rect key="frame" x="30" y="59" width="333" height="729"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sKi-JN-g4m">
+                                        <rect key="frame" x="15" y="0.0" width="303" height="446.33333333333331"/>
+                                        <string key="text">You, Little Red Riding Hood, are on your way to Grandma's house with a basket of goodies, but you forgot the way! You find yourself at a fork in the road. One way leads down a dark path through the Enchanted Forest, the other leads to a trail by the river. Which way do you choose?</string>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="p1L-y4-1Xi">
+                                        <rect key="frame" x="15" y="461.33333333333337" width="303" height="267.66666666666663"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YcX-J7-FQW">
+                                                <rect key="frame" x="15" y="0.0" width="273" height="123.66666666666667"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </backgroundConfiguration>
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="You decide to venture through the Enchanted Forest.">
+                                                            <attributes>
+                                                                <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mwZ-4g-ZXY">
+                                                <rect key="frame" x="15" y="143.66666666666663" width="273" height="124"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </backgroundConfiguration>
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="You follow the trail by the river.">
+                                                            <attributes>
+                                                                <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="mwZ-4g-ZXY" firstAttribute="leading" secondItem="p1L-y4-1Xi" secondAttribute="leading" constant="15" id="DXR-WA-DJ2"/>
+                                            <constraint firstAttribute="trailing" secondItem="YcX-J7-FQW" secondAttribute="trailing" constant="15" id="FqB-BD-1bs"/>
+                                            <constraint firstItem="YcX-J7-FQW" firstAttribute="leading" secondItem="p1L-y4-1Xi" secondAttribute="leading" constant="15" id="Iqt-3b-J1Q"/>
+                                            <constraint firstItem="mwZ-4g-ZXY" firstAttribute="height" secondItem="YcX-J7-FQW" secondAttribute="height" id="KXf-TP-sIz"/>
+                                            <constraint firstAttribute="trailing" secondItem="mwZ-4g-ZXY" secondAttribute="trailing" constant="15" id="f1K-YB-QJa"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="p1L-y4-1Xi" firstAttribute="height" secondItem="sKi-JN-g4m" secondAttribute="height" multiplier="0.6" id="Dj3-4O-7pA"/>
+                                    <constraint firstAttribute="trailing" secondItem="sKi-JN-g4m" secondAttribute="trailing" constant="15" id="Ivt-zQ-VKD"/>
+                                    <constraint firstItem="p1L-y4-1Xi" firstAttribute="leading" secondItem="OLr-B0-AcP" secondAttribute="leading" constant="15" id="K3a-RF-Fyo"/>
+                                    <constraint firstItem="sKi-JN-g4m" firstAttribute="leading" secondItem="OLr-B0-AcP" secondAttribute="leading" constant="15" id="YgD-ER-SUE"/>
+                                    <constraint firstAttribute="trailing" secondItem="p1L-y4-1Xi" secondAttribute="trailing" constant="15" id="yyj-zU-8ik"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OLr-B0-AcP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="7ir-f9-H0u"/>
+                            <constraint firstItem="OLr-B0-AcP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="TpC-t4-fdE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OLr-B0-AcP" secondAttribute="bottom" constant="30" id="Vs1-8J-q2M"/>
+                            <constraint firstItem="AFe-OH-cig" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ym7-n5-yZ2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OLr-B0-AcP" secondAttribute="trailing" constant="30" id="ZUB-Y1-aD3"/>
+                            <constraint firstItem="AFe-OH-cig" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="erf-7y-3c7"/>
+                            <constraint firstAttribute="bottom" secondItem="AFe-OH-cig" secondAttribute="bottom" id="x9s-s8-EEk"/>
+                            <constraint firstItem="AFe-OH-cig" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xZX-Cq-WJv"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-34.507042253521128"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
