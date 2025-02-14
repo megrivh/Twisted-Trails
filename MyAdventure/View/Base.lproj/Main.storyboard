@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_3" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,32 +13,30 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyAdventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AFe-OH-cig">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AFe-OH-cig">
+                                <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="OLr-B0-AcP">
-                                <rect key="frame" x="30" y="59" width="333" height="729"/>
+                                <rect key="frame" x="30" y="62" width="342" height="748"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sKi-JN-g4m">
-                                        <rect key="frame" x="15" y="0.0" width="303" height="446.33333333333331"/>
+                                        <rect key="frame" x="15" y="0.0" width="312" height="458"/>
                                         <string key="text">You, Little Red Riding Hood, are on your way to Grandma's house with a basket of goodies, but you forgot the way! You find yourself at a fork in the road. One way leads down a dark path through the Enchanted Forest, the other leads to a trail by the river. Which way do you choose?</string>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="p1L-y4-1Xi">
-                                        <rect key="frame" x="15" y="461.33333333333337" width="303" height="267.66666666666663"/>
+                                        <rect key="frame" x="15" y="473" width="312" height="275"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YcX-J7-FQW">
-                                                <rect key="frame" x="15" y="0.0" width="273" height="123.66666666666667"/>
+                                                <rect key="frame" x="15" y="0.0" width="282" height="127.66666666666667"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain">
-                                                    <backgroundConfiguration key="background">
-                                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </backgroundConfiguration>
+                                                    <backgroundConfiguration key="background" strokeWidth="0.0"/>
                                                     <attributedString key="attributedTitle">
                                                         <fragment content="You decide to venture through the Enchanted Forest.">
                                                             <attributes>
@@ -47,15 +45,17 @@
                                                             </attributes>
                                                         </fragment>
                                                     </attributedString>
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="choiceOneSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nNH-Q0-pOc"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mwZ-4g-ZXY">
-                                                <rect key="frame" x="15" y="143.66666666666663" width="273" height="124"/>
+                                                <rect key="frame" x="15" y="147.66666666666663" width="282" height="127.33333333333331"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain">
-                                                    <backgroundConfiguration key="background">
-                                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </backgroundConfiguration>
+                                                    <backgroundConfiguration key="background" strokeWidth="0.0"/>
                                                     <attributedString key="attributedTitle">
                                                         <fragment content="You follow the trail by the river.">
                                                             <attributes>
@@ -64,7 +64,11 @@
                                                             </attributes>
                                                         </fragment>
                                                     </attributedString>
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="choiceTwoSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zbg-Su-IXm"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -98,6 +102,12 @@
                             <constraint firstItem="AFe-OH-cig" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xZX-Cq-WJv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="background" destination="AFe-OH-cig" id="aHb-Qb-Rj9"/>
+                        <outlet property="choiceOneButton" destination="YcX-J7-FQW" id="hcM-yj-R4E"/>
+                        <outlet property="choiceTwoButton" destination="mwZ-4g-ZXY" id="CcK-YB-AVo"/>
+                        <outlet property="storyLabel" destination="sKi-JN-g4m" id="6ZX-Nq-OU1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
